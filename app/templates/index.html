@@ -10,39 +10,42 @@
     </head>
 
     <body>
-        <div>
-            <br>
-            <h2><strong>Preencha os campos a baixo</strong></h2>
-            <hr>
-            <br>
+       
+        <!--Criando uma classe container do bootstrap-->
+        <div class="container">
+            <div class="row mt-4 bg-dark">
+                <h2 class="text-center text-light" ><strong>Preecha os campos a baixo</strong></h2>
+            </div>
+            
+            <form action="" method="post" class="row mt-4">
+
+                <div class="col-6">
+                    Nome
+                    <input type="text" name="nome" id="" class="form-control" required>
+                </div>
+
+                <div class="col-6">
+                    Email
+                    <input type="text" name="email" id="" class="form-control" required>
+                </div>
+
+                <div class="col-12">
+                    Assunto
+                    <input type="text" name="assunto" id="" class="form-control" required>
+                </div>
+
+                <div class="col-12">
+                    Mensagem
+                    <textarea name="mensagem" id="" cols="30" rows="4" class="form-control" required></textarea>
+                </div>
+
+                <div class="col-3">
+                    <button type="submit" class="btn btn-dark mt-4 col-12">Enviar</button>
+            </form>
         </div>
-
-        <form class="row g-4">
-
-            <div class="col-md-4">
-                <label for="inputNome" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="inputNome">
-            </div>
-
-            <div class="col-md-4">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4">
-            </div>
-
-            <div class="col-md-4">
-                <label for="inputAssunto" class="form-label">Assunto</label>
-                <input type="text" class="form-control" id="inputAssunto">
-            </div>
-
-            <div class="col-md-4">
-                <label for="inputMensagem" class="form-label">Mensagem</label>
-                <input type="text" class="form-control" id="inputMensagem">
-            </div>
-
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary">Sign in</button>
-            </div>
-        </form>
+            
+        
+        
 
 
         <!--Links Scripts JavaScript do Bootstrap-->
